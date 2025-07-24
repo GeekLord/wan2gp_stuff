@@ -20,6 +20,8 @@ source ~/.bashrc
 # Export PATH to ensure conda is available
 export PATH="$HOME/miniconda3/bin:$PATH"
 
+conda tos accept --override-channels --channel defaults
+
 # Create conda environment with Python 3.12
 conda create -n whisper python=3.12 -y
 conda activate whisper
