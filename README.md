@@ -21,6 +21,7 @@ cd Wan2GP
 # Fix matplotlib backend
 sed -i "s/matplotlib.use('TkAgg')/matplotlib.use('Agg')/g" preprocessing/dwpose/util.py
 sed -i 's/filter_letters(video_prompt_type, "PDSFCMU"))/filter_letters(video_prompt_type, "PDSLCMU"))/g' wgp.py
+conda tos accept --override-channels --channel defaults
 conda create -n wan2gp python=3.10.9 -y
 conda activate wan2gp
 pip install torch==2.7.0 torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
