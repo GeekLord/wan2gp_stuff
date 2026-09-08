@@ -7,7 +7,7 @@
 apt update && apt install -y unzip wget
 
 # Download and unpack FW.zip
-wget https://github.com/pavelxx1/wan2gp_stuff/raw/refs/heads/main/FW.zip
+wget https://github.com/GeekLord/wan2gp_stuff/raw/refs/heads/main/FW.zip
 unzip -o FW.zip
 
 # Download and install Miniconda
