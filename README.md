@@ -15,14 +15,14 @@ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 chmod +x Miniconda3-latest-Linux-x86_64.sh
 ./Miniconda3-latest-Linux-x86_64.sh -b -p $HOME/miniconda3
 $HOME/miniconda3/bin/conda init bash
-source ~/.bashrc
+eval "$($HOME/miniconda3/bin/conda shell.bash hook)"
 # Install ffmpeg with sudo check
 if command -v sudo >/dev/null 2>&1; then
-    sudo apt update
-    sudo apt install ffmpeg -y
+    sudo apt-get update
+    sudo apt-get install ffmpeg -y
 else
-    apt update
-    apt install ffmpeg -y
+    apt-get update
+    apt-get install ffmpeg -y
 fi
 git clone https://github.com/deepbeepmeep/Wan2GP.git
 cd Wan2GP
@@ -55,14 +55,14 @@ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 chmod +x Miniconda3-latest-Linux-x86_64.sh
 ./Miniconda3-latest-Linux-x86_64.sh -b -p $HOME/miniconda3
 $HOME/miniconda3/bin/conda init bash
-source ~/.bashrc
+eval "$($HOME/miniconda3/bin/conda shell.bash hook)"
 # Install ffmpeg with sudo check
 if command -v sudo >/dev/null 2>&1; then
-    sudo apt update
-    sudo apt install ffmpeg -y
+    sudo apt-get update
+    sudo apt-get install ffmpeg -y
 else
-    apt update
-    apt install ffmpeg -y
+    apt-get update
+    apt-get install ffmpeg -y
 fi
 git clone https://github.com/deepbeepmeep/Wan2GP.git
 cd Wan2GP
@@ -106,14 +106,14 @@ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 chmod +x Miniconda3-latest-Linux-x86_64.sh
 ./Miniconda3-latest-Linux-x86_64.sh -b -p $HOME/miniconda3
 $HOME/miniconda3/bin/conda init bash
-source ~/.bashrc
+eval "$($HOME/miniconda3/bin/conda shell.bash hook)"
 # Install ffmpeg with sudo check
 if command -v sudo >/dev/null 2>&1; then
-    sudo apt update
-    sudo apt install ffmpeg -y
+    sudo apt-get update
+    sudo apt-get install ffmpeg -y
 else
-    apt update
-    apt install ffmpeg -y
+    apt-get update
+    apt-get install ffmpeg -y
 fi
 git clone https://github.com/deepbeepmeep/Wan2GP.git
 cd Wan2GP
@@ -140,13 +140,13 @@ python wgp.py --share
 ```
 
 
-## MultuTalk
+## MultiTalk
 ```
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 chmod +x Miniconda3-latest-Linux-x86_64.sh
 ./Miniconda3-latest-Linux-x86_64.sh -b -p $HOME/miniconda3
 $HOME/miniconda3/bin/conda init bash
-source ~/.bashrc
+eval "$($HOME/miniconda3/bin/conda shell.bash hook)"
 conda create -n multitalk python=3.10 -y
 conda activate multitalk
 pip install torch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1 --index-url https://download.pytorch.org/whl/cu121
